@@ -15,3 +15,5 @@ plugins:
 
 # Theme override
 logo: /assets/images/logo.svg
+include:
+  - assets/css

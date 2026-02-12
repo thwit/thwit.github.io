@@ -1,0 +1,10 @@
+/* Global font override */
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "Courier New", monospace !important;
+}
