@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42"><g fill="none" fill-rule="evenodd"><path fill="#8549FC" fill-rule="nonzero" d="M11 16.21V26c.4.31 1.1.64 1.99.93A27.1 27.1 0 0 0 21 28c3.08 0 5.95-.4 8.01-1.07A7.1 7.1 0 0 0 31 26v-9.79C28.85 17.3 25.17 18 21 18s-7.85-.71-10-1.79zM33 14v12c0 2.2-5.37 4-12 4S9 28.2 9 26V14c0-2.2 5.37-4 12-4s12 1.8 12 4zm-3.99-.93A27.1 27.1 0 0 0 21 12c-3.08 0-5.95.4-8.01 1.07-.9.3-1.58.62-1.99.93.4.31 1.1.64 1.99.93A27.1 27.1 0 0 0 21 16c3.08 0 5.95-.4 8.01-1.07A7.1 7.1 0 0 0 31 14a7.1 7.1 0 0 0-1.99-.93zM15 24.5a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0v5zm7 1a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0v5zm7-1a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0v5z"/><rect width="42" height="42"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.5L8.5 9.5M8.5 9.5H16M8.5 9.5L10.5 16.5L16 9.5M8.5 9.5L7.5 7M16 9.5L17 12.5M16 9.5L15.5 8.5L18.5 8V9.5M9 15.5C9 17.433 7.433 19 5.5 19C3.567 19 2 17.433 2 15.5C2 13.567 3.567 12 5.5 12C7.433 12 9 13.567 9 15.5Z" stroke="#000000" stroke-width="1.2" stroke-linejoin="round"/>
+<circle cx="18.5" cy="15.5" r="3.5" stroke="#000000" stroke-width="1.2"/>
+<path d="M7 7H9.5" stroke="#000000" stroke-linecap="round"/>
+</svg>
