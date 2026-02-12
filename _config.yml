@@ -1,0 +1,12 @@
+title: Your Blog Name
+description: A brief description
+url: "https://username.github.io"
+baseurl: ""
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Build settings
+markdown: kramdown
+theme: minima  # or any other Jekyll theme
