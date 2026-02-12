@@ -9,4 +9,6 @@ paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown
-theme: minima  # or any other Jekyll theme
+remote_theme: daviddarnes/garth
+plugins:
+  - jekyll-remote-theme
