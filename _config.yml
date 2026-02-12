@@ -12,3 +12,6 @@ markdown: kramdown
 remote_theme: daviddarnes/garth
 plugins:
   - jekyll-remote-theme
+
+# Theme override
+logo: /assets/images/logo.svg
