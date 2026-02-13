@@ -28,7 +28,7 @@
     titleElement.textContent = titles[currentIndex];
     
     // If it's the last title (Today I {verbed}), stay forever
-    const delay = (currentIndex === titles.length - 1) ? 10000000 : 200;
+    const delay = (currentIndex === titles.length - 1) ? 20000 : 200;
     setTimeout(rotateTitle, delay);
   }
   

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+			<title>Today I learned about TIL-style blogs - Today I {verbed}</title>
+		
+
+		<link rel="stylesheet" href="/assets/styles.css">
+
+		
+			<link rel="shortcut icon" href="">
+		
+
+	</head>
+	<body>
+
+		<header class="header">
+  <div class="container">
+    <a class="header__title" href="/">
+      <span id="rotating-title">Today I {verbed}.</span>
+    </a>
+    <nav class="nav">
+  <ul class="list list--nav">
+    
+      
+        <li class="item  item--nav">
+          
+            <a href="/about">about</a>
+          
+        </li>
+      
+    
+      
+        <li class="item  item--nav">
+          
+            <a href="/"></a>
+          
+        </li>
+      
+    
+      
+        <li class="item  item--nav">
+          
+            <a href="/assets/styles.css"></a>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+<script>
+    const titles = [
+    'Today I learned.',
+    'Today I built.',
+    'Today I broke.',
+    'Today I realized.',
+    'Today I tried.',
+    'Today I fixed.',
+    'Today I wondered.',
+    'Today I {verbed}.'
+    ];
+  
+  
+  let currentIndex = 0;
+  const titleElement = document.getElementById('rotating-title');
+  
+  function rotateTitle() {
+    currentIndex = (currentIndex + 1) % titles.length;
+    titleElement.textContent = titles[currentIndex];
+    
+    // If it's the last title (Today I {verbed}), stay forever
+    const delay = (currentIndex === titles.length - 1) ? 20000 : 200;
+    setTimeout(rotateTitle, delay);
+  }
+  
+  // Start rotating after initial 5 second delay (since we start on {verbed})
+  setTimeout(rotateTitle, 1500);
+</script>
+
+<main class="main  container">
+
+	<article class="article  article--post  content  typeset">
+
+    <h1>Today I learned about TIL-style blogs</h1>
+		
+
+<small class="small  post-meta">
+  
+    
+  &nbsp;&middot;&nbsp;<time datetime="2026-02-12T00:00:00+01:00" class="time">12 Feb 2026</time>
+</small>
+
+    <p>I’ve been wanting to create a blog-like personal page for a little time now. After discovering the <a href="https://simonwillison.net/">blog of Simon Willison</a> a few weeks ago, and later his post <em><a href="https://simonwillison.net/2022/Nov/6/what-to-blog-about/">What to blog about</a></em>, I’ve finally taken the step to try it out myself. Specifically, I will treat this little site as a <strong>Today I <em>{verbed}</em></strong>-style blog. Replace <em>verbed</em> with words like <em>learned</em> (of course), <em>created</em>, <em>went</em>, <em>lost</em>, and <em>found</em>.</p>
+
+<p>Of course, there have been other factors pushing me to finally getting started - my partner (rightfully) thinks that I should write my thoughts, ideas, and funky feelings down <em>somewhere</em> instead of sharing them <em>nowhere</em>. Thus, this place is meant as a personal collection of such. Mainly for my self - but open to the public.</p>
+
+<p>As such, welcome to my blog.</p>
+
+
+  </article>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="copyright  typeset">
+      <small class="small">&copy; Today I {verbed} 2026</small>
+    </div>
+  </div>
+</footer>
+
+
+
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
+	</body>
+</html>
