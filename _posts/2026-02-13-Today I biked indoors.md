@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Today I biked indoors"
-date: 2026-02-13
+date: 2026-02-12
 ---
 
 My current main hobby is biking. I enjoy the time spent in the saddle, seeing my fitness progress by longer rides at a faster pace while recovering quicker. I enjoy biking _outdoors_. However, most of 2026 so far have seen the ground covered in a white layer called _snow_ with temperatures below _freezing_. Not ideal conditions for biking outdoors.
