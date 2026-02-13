@@ -16,7 +16,7 @@
     'Today I tried',
     'Today I fixed',
     'Today I wondered',
-    'Today I {verbed};'
+    'Today I {verbed}'
     ];
   
   
@@ -28,7 +28,7 @@
     titleElement.textContent = titles[currentIndex];
     
     // If it's the last title (Today I {verbed}), wait 5 seconds, otherwise 333ms
-    const delay = (currentIndex === titles.length - 1) ? 1500 : 250;
+    const delay = (currentIndex === titles.length - 1) ? 1250 : 200;
     setTimeout(rotateTitle, delay);
   }
   
