@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Today I Zwifted"
+title: "Today I biked indoors"
 date: 2026-02-13
 ---
 
