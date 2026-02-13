@@ -14,6 +14,6 @@ plugins:
   - jekyll-remote-theme
 
 # Theme override
-logo: /assets/images/logo.svg
+#logo: /assets/images/logo.svg
 sass:
   style: compressed
