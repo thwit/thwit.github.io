@@ -19,14 +19,19 @@
     'Today I &lt;verbed&gt;'
     ];
   
+  
   let currentIndex = 0;
   const titleElement = document.getElementById('rotating-title');
   
   function rotateTitle() {
     currentIndex = (currentIndex + 1) % titles.length;
     titleElement.textContent = titles[currentIndex];
+    
+    // If it's the last title (Today I <verbed>), wait 5 seconds, otherwise 333ms
+    const delay = (currentIndex === titles.length - 1) ? 5000 : 333;
+    setTimeout(rotateTitle, delay);
   }
   
-  // Rotate every second
-  setInterval(rotateTitle, 1000);
+  // Start rotating after initial 5 second delay (since we start on <verbed>)
+  setTimeout(rotateTitle, 5000);
 </script>
