@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "garth";
 
 body, p, h1, h2, h3, h4, h5, h6, a, li, td, th {
@@ -14,4 +15,18 @@ code, pre {
 .no-page-title .page__title,
 .no-page-title h1.title {
   display: none;
+}
+
+// Site title in header
+.header__title {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
