@@ -17,21 +17,7 @@ def create_post():
         print("Verb cannot be empty!")
         sys.exit(1)
     
-    # Ask if they want to add content now or later
-    add_content = input("Add content now? (y/n, default: n): ").strip().lower()
-    
-    if add_content == 'y':
-        print("Enter your content (press Ctrl+D or Ctrl+Z when done):")
-        content_lines = []
-        try:
-            while True:
-                line = input()
-                content_lines.append(line)
-        except EOFError:
-            pass
-        content = "\n".join(content_lines)
-    else:
-        content = "Write your post here..."
+    content = "Write your post here..."
     
     # Read template
     with open("_template.md", "r") as f:
@@ -52,38 +38,7 @@ def create_post():
         f.write(post_content)
     
     print(f"\n? Created: {filename}")
-    
-    # Ask if they want to open in editor
-    open_editor = input("Open in editor? (y/n, default: y): ").strip().lower()
-    
-    if open_editor != 'n':
-        # Check if running in VS Code
-        is_vscode = (
-            os.environ.get('TERM_PROGRAM') == 'vscode' or
-            os.environ.get('VSCODE_INJECTION') or
-            os.environ.get('VSCODE_GIT_IPC_HANDLE')
-        )
-        
-        if is_vscode:
-            # Running in VS Code - open in VS Code
-            try:
-                subprocess.run(['code', filename])
-                print(f"Opening in VS Code...")
-            except FileNotFoundError:
-                print("VS Code detected but 'code' command not found!")
-        else:
-            # Not in VS Code - use notepad (or default editor on non-Windows)
-            if platform.system() == 'Windows':
-                subprocess.run(['notepad', filename])
-            else:
-                # Fallback for macOS/Linux
-                editors = ['nano', 'vim', 'vi']
-                for editor in editors:
-                    try:
-                        subprocess.run([editor, filename])
-                        break
-                    except FileNotFoundError:
-                        continue
+
 
 if __name__ == "__main__":
     create_post()
