@@ -10,7 +10,7 @@ def create_post():
     date_str = today.strftime("%Y-%m-%d")
     
     # Get verb from user
-    print("Creating a new blog post for Today I <verbed>")
+    print("Creating a new blog post for Today I {verbed}")
     verb = input("Title: Today I ").strip()
     
     if not verb:
