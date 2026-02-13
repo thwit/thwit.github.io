@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <a class="header__title" href="{{ '/' | relative_url }}">
-      <span id="rotating-title">Today I {verbed}</span>
+      <span id="rotating-title">Today I {learned}</span>
     </a>
     {% include site-nav.html %}
   </div>
@@ -9,7 +9,6 @@
 
 <script>
     const titles = [
-    'Today I learned',
     'Today I built',
     'Today I broke',
     'Today I realized',
@@ -27,8 +26,8 @@
     currentIndex = (currentIndex + 1) % titles.length;
     titleElement.textContent = titles[currentIndex];
     
-    // If it's the last title (Today I {verbed}), wait 5 seconds, otherwise 333ms
-    const delay = (currentIndex === titles.length - 1) ? 1250 : 200;
+    // If it's the last title (Today I {verbed}), stay forever
+    const delay = (currentIndex === titles.length - 1) ? 10000000 : 200;
     setTimeout(rotateTitle, delay);
   }
   
