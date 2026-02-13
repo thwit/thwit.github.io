@@ -6,3 +6,27 @@
     {% include site-nav.html %}
   </div>
 </header>
+
+<script>
+    const titles = [
+    'Today I learned',
+    'Today I built',
+    'Today I broke',
+    'Today I realized',
+    'Today I tried',
+    'Today I fixed',
+    'Today I wondered',
+    'Today I &lt;verbed&gt;'
+    ];
+  
+  let currentIndex = 0;
+  const titleElement = document.getElementById('rotating-title');
+  
+  function rotateTitle() {
+    currentIndex = (currentIndex + 1) % titles.length;
+    titleElement.textContent = titles[currentIndex];
+  }
+  
+  // Rotate every second
+  setInterval(rotateTitle, 1000);
+</script>
